@@ -1,0 +1,1383 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+.ant-table-thead > tr > th {
+  text-align: center !important;
+  background: #f8f8f8 !important;
+  height: 32px !important;
+  line-height: 14px !important;
+  padding: 9px !important;
+  border: none !important;
+  color: #151515 !important;
+}
+.ant-table-tbody > tr > td {
+  text-align: center !important;
+  height: 32px !important;
+  line-height: 14px !important;
+  padding: 9px !important;
+  border: none !important;
+  color: #151515 !important;
+}
+.ant-table-column-title {
+  height: 19px !important;
+  line-height: 19px !important;
+}
+
+tr.ant-table-row.clickedRow {
+  background-color: rgba(0, 122, 255, 0.08) !important;
+}
+tr.ant-table-row:hover {
+  background-color: rgba(0, 122, 255, 0.08) !important;
+}
+tr.ant-table-row.selectedRow {
+  background-color: #ebf5ff !important;
+}
+tr.ant-table-row.linkedRow {
+  background-color: #96e8a0 !important;
+}
+tr.ant-table-row.errRow {
+  background-color: #ffbc6e !important;
+}
+
+.light-row {
+  background-color: #fff !important;
+}
+.dark-row {
+  background-color: #f8f8f8 !important;
+}
+.ant-calendar-date-input-wrap {
+  margin-left: 100px !important;
+}
+.ant-calendar-range-middle {
+  transform: translateX(0) !important;
+}
+.en .register-form .ant-col.ant-form-item-control-wrapper{
+  width: 280px !important;
+}
+
+.register-form .ant-col.ant-form-item-control-wrapper,
+.active-form .ant-col.ant-form-item-control-wrapper,
+.access-settings .ant-col.ant-form-item-control-wrapper,
+.recognize-settings .ant-col.ant-form-item-control-wrapper,
+.role-add .ant-col.ant-form-item-control-wrapper,
+.resetPwd .ant-col.ant-form-item-control-wrapper,
+.warmthSettings .ant-col.ant-form-item-control-wrapper {
+  width: 240px !important;
+}
+.linkStatus .ant-col.ant-form-item-control-wrapper{
+  width: 280px !important;
+}
+.personalized-settings .ant-col.ant-form-item-control-wrapper{
+  width: 351px !important;
+}
+.en  .basicSettings .Width535 .ant-col.ant-form-item-control-wrapper{
+  width: 535px !important;
+}
+.basicSettings .ant-col.ant-form-item-control-wrapper {
+  width: 350px !important;
+}
+.personalized-settings .max .ant-col.ant-form-item-control-wrapper {
+  width: 340px !important;
+}
+.equipment-active form .ant-col.ant-form-item-control-wrapper {
+  width: 510px !important;
+}
+.en .ant-col.ant-form-item-control-wrapper{
+  width: 260px;
+}
+.ant-col.ant-form-item-control-wrapper {
+  display: inline-block !important;
+  width: 280px;
+}
+.ant-form-item-label > label {
+  color: #151515 !important;
+}
+.ant-form-item-control {
+  line-height: 18px !important;
+}
+.firstLogin .ant-form-item-label {
+  width: 98px;
+  margin-right: 8px;
+  height: 100%;
+  line-height: 32px;
+}
+
+.ant-row.ant-form-item.ant-form-item-with-help {
+  position: relative !important;
+}
+.login-spin-content .ant-spin-nested-loading .ant-spin-container {
+  width: 100%;
+  height: 100%;
+} 
+.login-spin-content .ant-spin-nested-loading .ant-spin .ant-spin-dot{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.login-form .ant-form-item-label {
+  width: 56px;
+  margin-right: 36px;
+}
+.en .ant-col.ant-form-item-label.ant-form-item-label-left{
+  width: 75px;
+}
+.login-form
+  .ant-form-item-with-help
+  .ant-col.ant-form-item-label.ant-form-item-label-left {
+  top: -27px !important;
+}
+
+.login-form
+  .ant-form-item-with-help
+  .ant-col.ant-form-item-label.ant-form-item-label-left:nth-child(1) {
+  top: -28px !important;
+}
+
+.ant-form-explain {
+  line-height: 16px !important;
+  margin-top: 4px !important;
+  min-height: 16px !important;
+  color: #e83021 !important;
+  font-size: 12px !important;
+  background: url("../../../src/assets/images/login/error.png") top left
+    no-repeat;
+  padding-left: 18px;
+}
+.has-error .ant-input,
+.has-error .ant-input:hover,
+.has-error .ant-input:not([disabled]):hover {
+  border-color: #e83021 !important;
+}
+.has-error .ant-upload.ant-upload-select.ant-upload-select-picture-card,
+.has-error .ant-upload.ant-upload-select.ant-upload-select-picture-card:hover,
+.has-error
+  .ant-upload.ant-upload-select.ant-upload-select-picture-card:not([disabled]):hover {
+  border-color: #e83021 !important;
+}
+.username.ant-row.ant-form-item {
+  margin-bottom: 29px !important;
+}
+.firstLogin .ant-row.ant-form-item:nth-child(2),
+.firstLogin
+  .ant-row.ant-form-item:nth-child(3)
+  .login-form
+  .ant-row.ant-form-item:nth-child(3) {
+  height: 50px !important;
+}
+.register-form .ant-form .ant-form-item {
+  margin-bottom: 24px;
+}
+.ant-form .photo.ant-form-item {
+  margin-bottom: 12px;
+}
+.ant-form .ant-form-item {
+  margin-bottom: 32px;
+  color: #151515 !important;
+}
+.bottom24.ant-row.ant-form-item {
+  margin-bottom: 24px !important;
+}
+.access-settings .toRight.ant-row.ant-form-item.ant-form-item-with-help,
+.personalized-settings .toRight.ant-row.ant-form-item.ant-form-item-with-help,
+.recognize-settings .toRight.ant-row.ant-form-item.ant-form-item-with-help,
+.warmthSettings .toRight.ant-row.ant-form-item.ant-form-item-with-help,
+.networkSettingsTop .toRight.ant-row.ant-form-item.ant-form-item-with-help,
+.networkSettingsBottom .toRight.ant-row.ant-form-item.ant-form-item-with-help,
+.wifiSettings .toRight.ant-row.ant-form-item.ant-form-item-with-help {
+  margin-bottom: 24px !important;
+}
+.toRight.ant-row.ant-form-item.ant-form-item-with-help {
+  position: relative;
+  margin-bottom: 32px !important;
+}
+.photo.toRight.ant-row.ant-form-item.ant-form-item-with-help {
+  margin-bottom: 24px !important;
+}
+.firstLogin .ant-row.ant-form-item.ant-form-item-with-help,
+.login-form .ant-row.ant-form-item.ant-form-item-with-help {
+  margin-bottom: 32px !important;
+}
+.ant-row.ant-form-item.ant-form-item-with-help {
+  margin-bottom: 12px !important;
+}
+.ant-checkbox + span {
+  font-size: 12px !important;
+  color: #000000;
+}
+
+/* .storage .ant-col.ant-form-item-label.ant-form-item-label-left {
+  height: 70px;
+} */
+/* .storage.ant-row.ant-form-item {
+  height: 50px;
+} */
+.version .ant-col.ant-form-item-label.ant-form-item-label-left {
+  height: 70px;
+}
+.ant-col.ant-form-item-label.ant-form-item-label-left {
+  height: 32px;
+  line-height: 32px;
+}
+.en .firstLogin{
+  width: 440px;
+}
+.en .firstLogin .ant-col.ant-form-item-label.ant-form-item-label-left {
+  height: 32px;
+  line-height: 32px;
+  width: 130px ;
+}
+.en .register-form .ant-col.ant-form-item-label.ant-form-item-label-left {
+  width: 140px;
+}
+.register-form .ant-col.ant-form-item-label.ant-form-item-label-left {
+  width: 56px;
+  margin-right: 54px;
+}
+.active-form .ant-col.ant-form-item-label.ant-form-item-label-left {
+  width: 92px;
+  margin-right: 18px;
+}
+.en .access-settings .ant-col.ant-form-item-label.ant-form-item-label-left {
+  width: 235px;
+}
+.access-settings .ant-col.ant-form-item-label.ant-form-item-label-left {
+  width: 131px;
+  margin-right: 32px;
+}
+.en .recognize-settings .ant-col.ant-form-item-label.ant-form-item-label-left{
+  width: 225px;
+}
+.recognize-settings .ant-col.ant-form-item-label.ant-form-item-label-left {
+  width: 126px;
+  margin-right: 16px;
+}
+.en .basicSettings .ant-col.ant-form-item-label.ant-form-item-label-left{
+  width: 180px;
+}
+.en .network .ant-col.ant-form-item-label.ant-form-item-label-left{
+  width: 185px !important;
+}
+.en .warmthSettings .ant-col.ant-form-item-label.ant-form-item-label-left{
+  width: 350px !important;
+  /* width: 165px; */
+}
+/* .en .offline .ant-col.ant-form-item-label.ant-form-item-label-left{
+  width: 280px !important;
+} */
+.warmthSettings .ant-col.ant-form-item-label.ant-form-item-label-left,
+.networkSettingsTop .ant-col.ant-form-item-label.ant-form-item-label-left,
+.networkSettingsBottom .ant-col.ant-form-item-label.ant-form-item-label-left,
+.basicSettings .ant-col.ant-form-item-label.ant-form-item-label-left,
+.wifiSettings .ant-col.ant-form-item-label.ant-form-item-label-left {
+  width: 112px;
+  margin-right: 24px;
+}
+.basicSettings .systemTime .ant-col.ant-form-item-label.ant-form-item-label-left{
+  margin-top: -183px;
+}
+.subscript .ant-col.ant-form-item-label.ant-form-item-label-left {
+  margin-top: -60px !important;
+}
+.en .personalized-settings .ant-col.ant-form-item-label.ant-form-item-label-left{
+  width: 160px;
+}
+.personalized-settings .ant-col.ant-form-item-label.ant-form-item-label-left {
+  width: 70px;
+  margin-right: 32px;
+}
+
+.recognize-settings .successInterval .ant-col.ant-form-item-control-wrapper {
+  width: 176px !important;
+}
+.personalized-settings .wid254 .ant-col.ant-form-item-control-wrapper {
+  width: 254px !important;
+}
+.changePwd .haveTip.ant-row.ant-form-item {
+  margin-bottom: 45px !important;
+}
+.role-add .ant-row.ant-form-item {
+  margin-bottom: 24px !important;
+}
+
+.resetPwd .ant-row.ant-form-item {
+  margin-bottom: 24px !important;
+}
+.en .newPwd.ant-row.ant-form-item{
+  margin-bottom: 70px !important;
+}
+.newPwd.ant-row.ant-form-item {
+  margin-bottom: 48px !important;
+}
+.voice .ant-col.ant-form-item-control-wrapper {
+  width: 268px !important;
+}
+.logo .ant-col.ant-form-item-control-wrapper {
+  width: 320px !important;
+}
+.photo .ant-col.ant-form-item-control-wrapper {
+  vertical-align: top;
+}
+.ant-upload-list-picture-card .ant-upload-list-item {
+  width: 96px !important;
+  height: 96px !important;
+  padding: 0 !important;
+  /* border: 1px solid #0099ff !important; */
+}
+.ant-upload.ant-upload-select-picture-card {
+  border: 1px solid #d9d9d9 !important;
+}
+.ant-upload.ant-upload-select-picture-card:hover {
+  border: 1px solid #0099ff !important;
+}
+.ant-tooltip-content {
+  display: none;
+}
+.ant-upload.ant-upload-select-picture-card {
+  margin-bottom: 0 !important;
+  width: 96px;
+  height: 96px;
+}
+.ant-upload-list-picture-card-container {
+  margin-bottom: 0 !important;
+}
+.ant-upload-list-picture-card-container {
+  width: 96px !important;
+  height: 96px !important;
+}
+.toRight.success-user-dinfined .ant-form-explain {
+  left: 266px !important;
+}
+.toRight .ant-form-explain {
+  position: absolute !important;
+  top: 5px;
+  /* left: 248px; */
+  right: -210px;
+  width: 200px;
+}
+.toRight.radioLabel .ant-form-explain {
+  top: 0;
+}
+
+.ant-divider.ant-divider-vertical {
+  background-color: #151515;
+  margin: 0 !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: #007aff !important;
+  color: #fff !important;
+}
+.ant-btn-primary:hover {
+  background-color: #006fe8 !important;
+  border-color: #006fe8 !important;
+  color: #fff !important;
+}
+.member .ant-btn:hover {
+  color: #007aff !important;
+  transition: none !important;
+}
+.ant-radio-inner {
+  top: -1px !important;
+}
+.ant-radio-group label.ant-radio-wrapper:nth-child(2n + 1) {
+  margin-right: 56px;
+}
+.right84 .ant-radio-group label.ant-radio-wrapper:nth-child(2n + 1) {
+  margin-right: 84px;
+}
+.personalized-settings
+  .voice
+  .ant-radio-group
+  label.ant-radio-wrapper:nth-child(1) {
+  margin-bottom: 16px;
+}
+label.ant-radio-wrapper span:nth-child(2) {
+  padding: 0 !important;
+}
+.ant-select-arrow {
+  top: 45% !important;
+}
+.ant-select-selection:hover,
+.ant-input:hover,
+.ant-radio-inner::after,
+.ant-radio-inner:hover,
+.ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active,
+.ant-input:focus {
+  border-color: #007aff;
+}
+.ant-time-picker-input {
+  padding: 10px 16px;
+  color: #151515 !important;
+}
+span.ant-upload-list-item-actions .anticon svg {
+  height: 14px;
+  width: 14px;
+}
+i.anticon.anticon-eye-o {
+  margin: 0 8px 0 4px !important;
+}
+i.anticon.anticon-clock-circle.ant-time-picker-clock-icon svg {
+  height: 16px;
+  width: 16px;
+}
+.anticon svg {
+  width: 10px;
+  height: 10px;
+}
+.ant-input-suffix {
+  color: #b1b1b1 !important;
+}
+.ant-time-picker-panel.ant-time-picker-panel-column-3.ant-time-picker-panel-placement-bottomLeft {
+  width: 176px;
+  left: 408px;
+}
+.ant-time-picker-panel-select {
+  width: calc(100% / 3) !important;
+}
+.ant-time-picker-panel-input-wrap {
+  padding: 10px 16px !important;
+  width: 142px;
+  height: 32px;
+  line-height: 15px;
+}
+.ant-form-item .ant-switch {
+  margin-right: 24px !important;
+  min-width: 40px !important;
+  height: 16px;
+}
+.ant-switch-checked {
+  background-color: #007aff;
+}
+.personalized-settings .ant-upload-list.ant-upload-list-text {
+  position: absolute;
+  width: 240px;
+  top: -12px;
+  left: 248px;
+}
+.personalized-settings .ant-form-item-children > span {
+  position: relative;
+}
+.subTop88 .ant-col.ant-form-item-label.ant-form-item-label-left {
+  margin-top: -88px !important;
+}
+.subTop76 .ant-col.ant-form-item-label.ant-form-item-label-left {
+  margin-top: -76px !important;
+}
+.subTop145 .ant-col.ant-form-item-label.ant-form-item-label-left {
+  margin-top: -145px !important;
+}
+.subTop15 .ant-col.ant-form-item-label.ant-form-item-label-left {
+  margin-top: -15px !important;
+}
+.subTop158 .ant-col.ant-form-item-label.ant-form-item-label-left {
+  margin-top: -158px !important;
+}
+.leftNav .ant-menu-dark .ant-menu-item > a:hover {
+  color: #fff !important;
+}
+.ant-switch-checked::after,
+.ant-switch::after {
+  width: 14px !important;
+  height: 14px !important;
+  margin-top: -1px !important;
+}
+.top64.ant-row.ant-form-item {
+  margin-top: 64px;
+}
+.IP .ant-form-item-control,
+.MAC .ant-form-item-control,
+.SN .ant-form-item-control {
+  display: inline-block;
+}
+.IP .ant-col.ant-form-item-control-wrapper,
+.MAC .ant-col.ant-form-item-control-wrapper,
+.SN .ant-col.ant-form-item-control-wrapper {
+  height: 32px;
+  line-height: 32px;
+}
+.version .ant-row.ant-form-item {
+  height: 70px;
+}
+.ant-row.ant-form-item {
+  height: 32px;
+}
+.height52.ant-row.ant-form-item {
+  height: 52px;
+}
+.height71.ant-row.ant-form-item {
+  height: 71px;
+}
+.height84.ant-row.ant-form-item {
+  height: 84px;
+}
+.height102.ant-row.ant-form-item {
+  height: 102px;
+}
+.remember .ant-col.ant-form-item-label.ant-form-item-label-left {
+  height: 16px !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #007aff;
+}
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #007aff;
+}
+.ant-btn-primary {
+  background-color: #007aff !important;
+  border-color: #007aff !important;
+}
+
+.photo.ant-row.ant-form-item {
+  height: 116px !important;
+}
+.ant-upload-text {
+  color: #b1b1b1 !important;
+}
+.register .ant-input {
+  font-size: 14px;
+}
+.activeBtn.ant-row.ant-form-item {
+  margin-top: 56px !important;
+}
+.ant-pagination-item-active {
+  color: #007aff !important;
+  border-color: #07aaff !important;
+}
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover {
+  border-color: #006fe8 !important;
+}
+.ant-pagination-item-active:hover a {
+  color: #007aff !important;
+}
+button.btn.ant-btn.ant-btn-primary {
+  border-radius: 2px !important;
+}
+
+.bulk-register .ant-modal-body {
+  padding: 24px !important;
+}
+.ant-modal {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16) !important;
+  border-radius: 4px !important;
+  border: solid 1px #007aff !important;
+  padding: 0 !important;
+}
+.ant-modal-header {
+  padding: 13px 24px !important;
+  background: rgba(0, 122, 255, 0.08) !important;
+  border-radius: 4px 4px 0px 0px !important;
+  border-bottom: none !important;
+  height: 40px !important;
+}
+.ant-modal-title {
+  font-size: 14px !important;
+  color: #007aff !important;
+  line-height: 14px !important;
+  font-weight: 700 !important;
+}
+.ant-modal-footer {
+  text-align: left !important;
+  padding: 0 56px 24px 56px !important;
+  border-top: none !important;
+  margin-top: -24px !important;
+}
+button.modal-submit.ant-btn.ant-btn-primary {
+  width: 80px !important;
+  height: 32px !important;
+  border-radius: 2px !important;
+  border: solid 1px #007aff !important;
+  color: #007aff !important;
+  background-color: #fff !important;
+}
+button.modal-submit.ant-btn.ant-btn-primary:hover {
+  background-color: #007aff !important;
+  color: #fff !important;
+}
+button.new-modal-submit.ant-btn.ant-btn-primary {
+  width: 80px !important;
+  height: 32px !important;
+  background-color: #007aff !important;
+  border-radius: 2px !important;
+  color: #fff !important;
+  border: none !important;
+  float: right !important;
+}
+button.new-modal-submit.ant-btn.ant-btn-primary:hover {
+  background-color: #006fe8 !important;
+  border: none !important;
+}
+button.new-modal-cancel.ant-btn {
+  width: 80px !important;
+  height: 32px !important;
+  margin-left: 0px;
+  border-radius: 2px !important;
+  border: solid 1px #007aff !important;
+  color: #007aff !important;
+  background-color: #fff !important;
+}
+button.new-modal-cancel.ant-btn:hover {
+  background-color: #007aff !important;
+  color: #fff !important;
+}
+button.modal-cancel.ant-btn {
+  width: 80px !important;
+  height: 32px !important;
+  background-color: #007aff !important;
+  border-radius: 2px !important;
+  color: #fff !important;
+  border: none !important;
+  float: right !important;
+}
+button.modal-cancel.ant-btn:hover {
+  background-color: #006fe8 !important;
+  border: none !important;
+}
+button.ant-modal-close {
+  top: 12px !important;
+  right: 24px !important;
+}
+.ant-modal-close-x {
+  width: 16px !important;
+  height: 16px !important;
+  line-height: 10px !important;
+  color: #007aff !important;
+}
+span.ant-progress-text {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 0 !important;
+  color: #151515 !important;
+}
+.ant-progress-show-info .ant-progress-outer {
+  margin-top: 15px;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+.ant-progress-line {
+  position: static !important;
+}
+.ant-modal-body {
+  position: relative !important;
+}
+.ant-progress-inner {
+  border-radius: 2px;
+  border: solid 1px #007aff;
+  height: 8px;
+}
+.ant-progress-bg {
+  border-radius: 2px !important;
+  background-color: #007aff !important;
+}
+.bulk-register .ant-upload.ant-upload-select.ant-upload-select-text {
+  width: 100%;
+  height: 100%;
+}
+.bulk-register
+  .ant-upload.ant-upload-select.ant-upload-select-text
+  span.ant-upload {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.bulk-register
+  .ant-upload.ant-upload-select.ant-upload-select-text
+  span.ant-upload
+  button.ant-btn {
+  padding: 0;
+  border-radius: 2px;
+  height: 32px;
+  width: 88px;
+  border: none;
+}
+.en
+.bulk-register
+  .ant-upload.ant-upload-select.ant-upload-select-text
+  span.ant-upload
+  button.ant-btn {
+  width: 190px;
+}
+.bulk-register
+  .ant-upload.ant-upload-select.ant-upload-select-text
+  span.ant-upload
+  button.ant-btn {
+  top: 1px !important;
+  color: #151515;
+}
+.bulk-register
+  .ant-upload.ant-upload-select.ant-upload-select-text
+  span.ant-upload
+  button.ant-btn:hover {
+  border: 1px solid #007aff;
+  color: #007aff;
+}
+.bulk-register
+  .ant-upload.ant-upload-select.ant-upload-select-text
+  span.ant-upload
+  button.ant-btn:focus {
+  color: #151515;
+}
+button.ant-btn.ant-btn-primary.ant-btn-loading {
+  width: 100px !important;
+  margin-left: -10px !important;
+  padding-left: 12px !important;
+}
+button.ant-btn.ant-btn-primary.ant-btn-loading + button.modal-cancel.ant-btn {
+  margin-right: -10px !important;
+}
+
+.anticon.anticon-loading {
+  font-size: 14px !important;
+  vertical-align: middle !important;
+}
+
+.registerFail .ant-modal-body {
+  padding: 32px 32px 0 32px !important;
+  color: #151515;
+}
+.deleteFail .ant-modal-body {
+  padding: 32px 18px 0 32px !important;
+  color: #151515;
+}
+.registerFail .ant-modal-content {
+  height: 112px !important;
+}
+.deleteFail .ant-modal-content {
+  height: 88px !important;
+}
+.addFail .ant-modal-body {
+  padding: 32px !important;
+}
+.registerSuccess .ant-modal-body,
+.activeSuccess .ant-modal-body,
+.activeFail .ant-modal-body {
+  padding: 32px 52px 0 32px !important;
+  color: #151515;
+}
+.registerSuccess .ant-modal-content,
+.activeSuccess .ant-modal-content,
+.activeFail .ant-modal-content {
+  height: 90px !important;
+}
+
+span.ant-radio + * {
+  padding-left: 0;
+}
+.ant-input,
+.ant-radio-wrapper {
+  color: #151515 !important;
+}
+div#personalizedSettings_successVoice {
+  width: 300px;
+}
+button#personalizedSettings_successVoiceCheck,
+button#personalizedSettings_faiVoiceCheck,
+button#personalizedSettings_failVoiceCheck,
+button#personalizedSettings_failIdentification {
+  margin-bottom: 24px !important;
+}
+.ant-input {
+  /* padding: 9px 16px !important; */
+  padding: 0px 0px 0px 16px !important;
+  line-height: 32px !important;
+}
+.ant-select-selection__rendered {
+  margin-left: 16px !important;
+  color: #151515 !important;
+}
+.ant-select-dropdown-menu-item {
+  color: #151515 !important;
+}
+.ant-input-affix-wrapper .ant-input-suffix {
+  right: 9px !important;
+  padding-right: 0 !important;
+}
+.ant-form-item-with-help button.uploadPhoto.ant-btn {
+  border-color: #e83021 !important;
+}
+.time.toRight .ant-form-explain {
+  left: 184px !important;
+}
+.toRight.success-voice .ant-form-explain {
+  top: 0 !important;
+  left: 288px !important;
+}
+.toRight.fail-pop-up .ant-form-explain {
+  top: 0 !important;
+}
+.toRight.fail-voice .ant-form-explain {
+  top: 0 !important;
+}
+.toRight.fail-user-dinfined .ant-form-explain {
+  left: 264px !important;
+}
+.toRight.successInterval .ant-form-explain {
+  left: 184px !important;
+}
+label.ant-radio-wrapper:nth-child(1) {
+  margin-bottom: 16px !important;
+}
+.ant-select-selection__choice .anticon svg {
+  width: 11px !important;
+  height: 13px !important;
+}
+.password.ant-row.ant-form-item.help
+  .ant-col.ant-form-item-label.ant-form-item-label-left {
+  margin-top: -60px !important;
+}
+.ant-modal-mask {
+  /* background-color: rgba(255, 255, 255, 0); */
+  display: none !important;
+}
+.ant-modal-content {
+  box-shadow: none !important;
+}
+.ant-modal {
+  box-shadow: none !important;
+}
+input#add-account_oldPassword.wrong {
+  border-color: #e83021 !important;
+}
+.ant-calendar-picker-clear {
+  background-color: #f5f7fa;
+}
+.basicSettings .ant-select-selection-selected-value {
+  padding-top: 0 !important;
+  font-size: 12px !important;
+}
+.ant-select-selection-selected-value {
+  padding-top: 2px !important;
+}
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background-color: #002955 !important;
+  box-shadow: none !important;
+}
+.ant-progress-status-success .ant-progress-text {
+  color: #8ed900 !important;
+  top: 16px !important;
+}
+.ant-progress-status-success .ant-progress-text .anticon svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+span.iconfont.iconpiliangzhuce {
+  margin-right: 4px !important;
+  vertical-align: baseline !important;
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+}
+span.ant-select-selection__clear {
+  background: #f5f7fa !important;
+}
+.ant-menu-inline .ant-menu-submenu-title {
+  margin: 0 !important;
+}
+.ant-menu-inline .ant-menu-submenu-title {
+  margin-bottom: 0 !important;
+}
+.ant-menu-submenu-title {
+  padding: 0 16px !important;
+}
+li.ant-menu-item {
+  padding-left: 56px !important;
+  margin: 0 !important;
+}
+.personalized-settings .toRight .ant-form-explain {
+  left: 288px;
+}
+.ant-select-selection__clear .anticon svg,
+span.ant-calendar-picker-input.ant-input .anticon svg {
+  width: 11px;
+  height: 11px;
+}
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover {
+  background-color: rgba(0, 122, 255, 0.08) !important;
+}
+.ant-upload-picture-card-wrapper {
+  display: inline-block !important;
+}
+.photo span.ant-form-item-children {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.showHandler input.ant-input-number-input {
+  text-align: center;
+}
+form .ant-input-number-handler-wrap {
+  opacity: 0 !important;
+}
+.showHandler.ant-input-number {
+  width: 101px !important;
+}
+.showHandler .ant-input-number-handler-wrap {
+  display: none;
+}
+.ant-input-number {
+  border-radius: 2px;
+}
+.ant-input-number:hover {
+  border-color: #007aff;
+}
+.ant-select-selection--single {
+  border-radius: 2px;
+}
+.logo-cont .ant-upload-list-picture-card .ant-upload-list-item-thumbnail {
+  background-color: #ccc;
+}
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+  object-fit: contain !important;
+}
+
+/* antd-message */
+.ant-message {
+  top: 50% !important;
+}
+.ant-message-notice-content {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  border: solid 1px #007aff;
+  min-width: 180px;
+  min-height: 88px;
+}
+.ant-message-notice-content .ant-message-custom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap;
+  min-height: 66px;
+  height: 66px;
+}
+.ant-message .ant-message-notice-content .anticon svg {
+  width: 24px;
+  height: 24px;
+}
+.ant-message-custom-content span {
+  font-size: 14px;
+  color: #151515;
+  line-height: 24px;
+  text-align: left;
+}
+.ant-modal-centered .ant-modal {
+  background-color: #fff !important;
+}
+
+.ant-modal-confirm-body-wrapper {
+  text-align: center;
+}
+.ant-modal-confirm-body-wrapper .ant-modal-confirm-body {
+  text-align: left;
+}
+.ant-modal-confirm-error .ant-modal-confirm-body > .anticon svg {
+  width: 20px;
+  height: 20px;
+}
+.ant-modal-confirm-body-wrapper .ant-btn {
+  width: 80px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 0;
+}
+
+.ant-progress-inner {
+  border: none;
+}
+.ant-progress-inner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: solid 1px #007aff;
+  border-radius: 2px;
+}
+.ant-slider-track {
+  background-color: #007aff !important;
+  border-radius: 1px !important;
+}
+.ant-slider-handle {
+  border: solid 2px #007aff !important;
+}
+.basicSettings input.ant-calendar-picker-input.ant-input {
+  padding: 0px 8px !important;
+  font-size: 12px;
+}
+.wifiSettings .ant-spin.ant-spin-show-text .ant-spin-text {
+  display: inline-block;
+  margin-left: 16px;
+}
+.wifiSettings span.ant-spin-dot.ant-spin-dot-spin {
+  vertical-align: middle;
+}
+.ant-input-disabled {
+  color: #b1b1b1 !important;
+}
+ul.ant-menu.ant-menu-inline.ant-menu-root.ant-menu-dark{
+  width: 160px;
+}
+.en ul.ant-menu.ant-menu-inline.ant-menu-root.ant-menu-dark{
+  width: 240px;
+}
+/* .en .offlineactive {
+  width: 500px !important;
+  height: 500px;
+} */
